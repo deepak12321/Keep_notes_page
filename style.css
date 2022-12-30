@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&display=swap');
+
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header styling starts*/
+.header-section{
+    background-color: rgb(14, 229, 121);
+    padding:10px;
+    color: white;
+}
+
+.header-text{
+    display:inline;
+    font-weight: 800;
+    font-size: xx-large;
+}
+/* Header styling ends */
+
+
+/* Add button styling starts */
+.fa-plus{
+    margin-left: 3px;
+}
+.btn-section{
+    justify-content: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.add-btn{
+    user-select: none;
+    background-color: rgb(14, 229, 121);
+    color: white;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 50px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    width:40px;
+    height: 40px;
+    transition: 0.3s ease-out;
+}
+
+.add{
+    height:30px;
+}
+
+.add-btn:hover{
+    cursor: pointer;
+    border-radius:30px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    width:165px; 
+}
+/*Add Button styling ends  */
+
+
+
+/*Container styling starts*/
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:85%; 
+    margin:auto;
+    gap:40px;
+    transition: 0.5s ease-out;
+}
+
+
+.main-note-body{
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    width:400px;
+    height:200px;
+    overflow-y: scroll;
+    -webkit-box-shadow: 5px 11px 16.5px 3px #dddddd;
+    -moz-box-shadow: 5px 11px 16.5px 3px #dddddd;
+    box-shadow: 5px 11px 16.5px 3px #dddddd;
+    animation: notesanimation 0.5s ease 0s 1 normal forwards;
+}
+.tools-div{
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    position: sticky;
+    top:0;
+    flex-direction: row-reverse;
+    align-items: center;
+    height:35px;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.note-content{
+    border-radius: 6px;
+    background-color: rgb(233, 245, 144);
+    padding:5px;
+    height: 165px;
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+.icon{
+    height:30px;
+    width:30px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    transition: 0.2s ease-out;
+}
+.write-div{ 
+    overflow: hidden;
+}
+
+.fa{
+    font-size: 15px;
+}
+
+.cl1{
+    background-color: rgb(14, 229, 121);
+}
+.cl2{
+    background-color: rgb(226, 121, 121);
+}
+.cl0{
+    background-color: rgb(240, 231, 55);
+}
+
+.cl1:hover{
+    background-color: rgb(219, 219, 219);
+    color:  rgb(51, 255, 0)
+}
+
+.cl2:hover{
+    background-color: rgb(219, 219, 219);
+    color: rgb(238, 2, 2);
+}
+
+.cl0:hover{
+    background-color: rgb(219, 219, 219);
+    color: rgb(255, 242, 0);
+}
+textarea{
+    outline:none;
+    border: none;
+    font-size:20px;
+    font-weight: 500;
+    padding: 5px;
+    width:100%;
+    height:170px;
+}
+
+/*Container styling ends*/
+
+
+/*Footer styling starts*/
+footer{
+    background-color: rgba(75, 75, 75, 0.359);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding: 5px;
+    margin-top: 15px;
+    width:100%;
+    height:30px;
+    top: 95%;
+}
+/*Footer styling ends*/
+
+@keyframes notesanimation {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
